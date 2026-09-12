@@ -8,8 +8,8 @@ from sklearn.base import BaseEstimator , RegressorMixin
 
 class GDRegressor(BaseEstimator, RegressorMixin):
     def __init__(self , lr = 0.01 , iter = 1000):
-      self.m_ = 100
-      self.b_ = 0
+      self.m_ = 0
+      self.b_ = 1
       self.lr = lr
       self.iter = iter
 
